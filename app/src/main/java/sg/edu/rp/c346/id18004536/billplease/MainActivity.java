@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 import android.widget.ToggleButton;
 
 public class MainActivity extends AppCompatActivity {
@@ -51,7 +52,6 @@ public class MainActivity extends AppCompatActivity {
                 double spl = 0;
                 double totalbill = 0;
 
-
                 if (!svs.isChecked() && !gst.isChecked()) {
                     spl = Double.parseDouble(amount1) / Double.parseDouble(pax1);
                     totalbill = Double.parseDouble(amount1);
@@ -78,11 +78,13 @@ public class MainActivity extends AppCompatActivity {
                 bill.setText(billformat);
                 pays.setText(paysFormat);
             }
+
         });
 
 
 
-        reset.setOnClickListener(new View.OnClickListener(){
+
+                reset.setOnClickListener(new View.OnClickListener(){
 
             @Override
             public void onClick(View v){
