@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/Amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/amount" />
+
+        <EditText
+            android:id="@+id/etAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="@string/amounthint" />
+
+        <TextView
+            android:id="@+id/pax"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/pax" />
+
+        <EditText
+            android:id="@+id/etPax"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:hint="@string/paxhint" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <ToggleButton
+            android:id="@+id/tglSvs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textOff="@string/tglSVS"
+            android:textOn="@string/tglSVS" />
+
+        <ToggleButton
+            android:id="@+id/tglGst"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textOff="@string/tglGST"
+            android:textOn="@string/tglGST" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/Discount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/discount" />
+
+        <EditText
+            android:id="@+id/etDiscount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:hint="@string/discountHint" />
+
+        <TextView
+            android:id="@+id/bill"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/bill" />
+
+        <TextView
+            android:id="@+id/pays"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/pays" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/split"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/btnSplit" />
+
+        <Button
+            android:id="@+id/reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/btnReset" />
+    </LinearLayout>
+
+
+</LinearLayout>
